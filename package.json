@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-sparkpost",
+  "version": "1.0.0",
+  "description": "ESLint configuration for SparkPost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "SparkPost",
+  "license": "Apache-2.0"
+}
