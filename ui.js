@@ -5,5 +5,5 @@ module.exports = {
     "phantomjs": true,
     "protractor": true
   },
-  extends: 'index'
+  extends: 'sparkpost/index'
 };
