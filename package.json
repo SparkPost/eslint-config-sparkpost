@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-sparkpost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration for SparkPost",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/SparkPost/eslint-config-sparkpost"
+    "type": "git",
+    "url": "https://github.com/SparkPost/eslint-config-sparkpost"
   },
   "main": "index.js",
   "scripts": {
