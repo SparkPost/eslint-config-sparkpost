@@ -4,7 +4,15 @@ module.exports = {
   },
   "extends": "eslint:recommended",
   "rules": {
-    "strict": "warn",
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "prefer-template": "warn",
+    "arrow-parens": ["error", "always"],
+    "arrow-spacing": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "no-dupe-class-members": "error",
+    "template-curly-spacing": ["error", "never"],
+    "strict": "error",
     "camelcase": [
       "error",
       {
