@@ -102,10 +102,11 @@ module.exports = {
     ],
     "eol-last": "error",
     "vars-on-top": "error",
-    "one-var": [
-      "error",
-      "always"
-    ],
+    "one-var": ["error", {
+      "var": "always", // Exactly one var declaration per function
+      "let": "always", // Exactly one let declaration per block
+      "const": "never" // Exactly one declarator per const declaration per block
+    }],
     "space-return-throw-case": "off",
     "space-infix-ops": "error",
     "space-before-blocks": [
