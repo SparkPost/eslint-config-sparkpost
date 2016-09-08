@@ -28,7 +28,8 @@ module.exports = {
       "error",
       2,
       {
-        "SwitchCase": 1
+        "SwitchCase": 1,
+        "MemberExpression": 1
       }
     ],
     "new-cap": "error",
