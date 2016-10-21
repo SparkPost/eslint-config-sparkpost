@@ -75,6 +75,13 @@ module.exports = {
         "afterColon": true
       }
     ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
     "space-unary-ops": "off",
     "no-spaced-func": "error",
     "space-before-function-paren": [
