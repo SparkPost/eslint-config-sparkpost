@@ -7,6 +7,7 @@ module.exports = {
     "prefer-const": "warn",
     "no-var": "warn",
     "prefer-template": "warn",
+    "prefer-arrow-callback": "error",
     "arrow-parens": ["error", "always"],
     "arrow-spacing": "error",
     "arrow-body-style": ["error", "as-needed"],
