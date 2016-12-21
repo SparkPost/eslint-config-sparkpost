@@ -13,12 +13,7 @@ module.exports = {
     "no-dupe-class-members": "error",
     "template-curly-spacing": ["error", "never"],
     "strict": "error",
-    "camelcase": [
-      "error",
-      {
-        "properties": "never"
-      }
-    ],
+    "camelcase": "off",
     "consistent-this": [
       "error",
       "self"
