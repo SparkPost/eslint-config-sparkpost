@@ -44,7 +44,7 @@ module.exports = {
     "no-unused-vars": "error",
     "semi": [
       "error",
-      "always"
+      "never"
     ],
     "no-cond-assign": "off",
     "no-debugger": "off",
