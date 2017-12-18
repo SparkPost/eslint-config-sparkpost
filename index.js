@@ -20,7 +20,7 @@ module.exports = {
       "error",
       "self"
     ],
-    "func-names": "warn",
+    "func-names": ["error", "as-needed"],
     "curly": [
       "error",
       "all"
