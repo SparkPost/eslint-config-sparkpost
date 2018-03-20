@@ -129,6 +129,25 @@ module.exports = {
     "linebreak-style": [
       "error",
       "unix"
-    ]
+    ],
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": true
+      }
+    }],
+    "valid-jsdoc": ["error", {
+      "prefer": {
+        "return": "returns",
+        "arg": "param",
+        "argument": "param"
+      },
+      "requireReturnType": true,
+      "matchDescription": ".+",
+      "requireParamDescription": true,
+      "requireReturnDescription": false
+    }]
   }
 };
