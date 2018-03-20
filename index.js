@@ -3,6 +3,15 @@ module.exports = {
     "es6": true
   },
   "extends": "eslint:recommended",
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "rules": {
+        "func-names": "off",
+        "prefer-arrow-callback": "off"
+      }
+    }
+  ],
   "rules": {
     "prefer-const": "error",
     "no-var": "error",
