@@ -4,7 +4,7 @@ module.exports = {
   },
   "parserOptions": {
     "ecmaVersion": 8
-  }
+  },
   "extends": "eslint:recommended",
   "rules": {
     "prefer-const": "error",
