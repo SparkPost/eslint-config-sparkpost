@@ -5,6 +5,8 @@ module.exports = {
   "extends": "eslint:recommended",
   "rules": {
     "prefer-const": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
     "no-var": "error",
     "prefer-template": "error",
     "max-params": ["error", 3],
@@ -44,7 +46,11 @@ module.exports = {
       "single"
     ],
     "no-undef": "error",
-    "no-unused-vars": "error",
+    "no-unused-vars": ["error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
     "semi": [
       "error",
       "always"
