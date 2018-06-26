@@ -1,9 +1,11 @@
+'use strict';
+
 module.exports = {
   env: {
-    es6: true,
+    es6: true
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2018
   },
   extends: 'eslint:recommended',
   rules: {
@@ -16,7 +18,7 @@ module.exports = {
     'comma-style': [
       'error',
       'first',
-      { exceptions: { ArrayExpression: true, ObjectExpression: true } },
+      { exceptions: { ArrayExpression: true, ObjectExpression: true } }
     ],
     complexity: ['error', 5],
     'consistent-this': ['error', 'self'],
@@ -50,10 +52,10 @@ module.exports = {
       {
         var: 'always', // Exactly one var declaration per function
         let: 'always', // Exactly one let declaration per block
-        const: 'never', // Exactly one declarator per const declaration per block
-      },
+        const: 'never' // Exactly one declarator per const declaration per block
+      }
     ],
-    'operator-linebreak': ['error', 'after'],
+    'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
@@ -70,15 +72,15 @@ module.exports = {
     'template-curly-spacing': ['error', 'never'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
-    yoda: ['error', 'never'],
+    yoda: ['error', 'never']
   },
   overrides: [
     {
       files: ['*.spec.js'],
       rules: {
         'func-names': 'off',
-        'prefer-arrow-callback': 'off',
-      },
-    },
-  ],
+        'prefer-arrow-callback': 'off'
+      }
+    }
+  ]
 };
