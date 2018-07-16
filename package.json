@@ -2,20 +2,23 @@
   "name": "eslint-config-sparkpost",
   "version": "1.5.1",
   "description": "ESLint configuration for SparkPost",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SparkPost/eslint-config-sparkpost"
-  },
+  "repository": "SparkPost/eslint-config-sparkpost",
+  "author": "SparkPost",
+  "license": "Apache-2.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "author": "SparkPost",
-  "license": "Apache-2.0",
+  "scripts": {
+    "precommit": "prettier-eslint --write *.js",
+    "test": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "husky": "^0.14.3",
+    "prettier-eslint-cli": "^4.7.1"
+  },
   "peerDependencies": {
     "eslint": "^4.13.0"
   }
