@@ -73,26 +73,32 @@ module.exports = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
     yoda: ['error', 'never'],
-    'require-jsdoc': ['error', {
-      'require': {
-          'FunctionDeclaration': true,
-          'MethodDefinition': true,
-          'ClassDeclaration': true,
-          'ArrowFunctionExpression': true,
-          'FunctionExpression': true
+    'require-jsdoc': [
+      'error',
+      {
+        require: {
+          FunctionDeclaration: true,
+          MethodDefinition: true,
+          ClassDeclaration: true,
+          ArrowFunctionExpression: true,
+          FunctionExpression: true
+        }
       }
-    }],
-    'valid-jsdoc': ['error', {
-      'prefer': {
-        'return': 'returns',
-        'arg': 'param',
-        'argument': 'param'
-      },
-      'requireReturnType': true,
-      'matchDescription': '.+',
-      'requireParamDescription': true,
-      'requireReturnDescription': false
-    }]
+    ],
+    'valid-jsdoc': [
+      'error',
+      {
+        prefer: {
+          return: 'returns',
+          arg: 'param',
+          argument: 'param'
+        },
+        requireReturnType: true,
+        matchDescription: '.+',
+        requireParamDescription: true,
+        requireReturnDescription: false
+      }
+    ]
   },
   overrides: [
     {
