@@ -23,7 +23,7 @@ module.exports = {
     'eol-last': 'error',
     eqeqeq: 'error',
     'func-names': ['error', 'as-needed'],
-    indent: ['error', 2, { SwitchCase: 1 }],
+    indent: ['error', 2, { SwitchCase: 1, VariableDeclarator: 2 }],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'unix'],
