@@ -2,10 +2,10 @@
 
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2018,
   },
   extends: 'eslint:recommended',
   rules: {
@@ -14,12 +14,8 @@ module.exports = {
     'arrow-spacing': 'error',
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     camelcase: 'off',
-    'comma-dangle': ['error', 'never'],
-    'comma-style': [
-      'error',
-      'first',
-      { exceptions: { ArrayExpression: true, ObjectExpression: true } }
-    ],
+    'comma-dangle': ['error', 'always-multiline'],
+    'comma-style': ['error', 'last'],
     complexity: ['error', 5],
     'consistent-this': ['error', 'self'],
     curly: ['error', 'all'],
@@ -52,8 +48,8 @@ module.exports = {
       {
         var: 'always', // Exactly one var declaration per function
         let: 'always', // Exactly one let declaration per block
-        const: 'never' // Exactly one declarator per const declaration per block
-      }
+        const: 'never', // Exactly one declarator per const declaration per block
+      },
     ],
     'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
@@ -72,15 +68,15 @@ module.exports = {
     'template-curly-spacing': ['error', 'never'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
-    yoda: ['error', 'never']
+    yoda: ['error', 'never'],
   },
   overrides: [
     {
       files: ['*.spec.js'],
       rules: {
         'func-names': 'off',
-        'prefer-arrow-callback': 'off'
-      }
-    }
-  ]
+        'prefer-arrow-callback': 'off',
+      },
+    },
+  ],
 };

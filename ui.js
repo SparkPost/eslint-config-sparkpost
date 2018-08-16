@@ -4,7 +4,7 @@ module.exports = {
   env: {
     browser: true,
     phantomjs: true,
-    protractor: true
+    protractor: true,
   },
-  extends: 'sparkpost/index'
+  extends: 'sparkpost/index',
 };
