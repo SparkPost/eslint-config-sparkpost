@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
   env: {
@@ -6,5 +6,5 @@ module.exports = {
     phantomjs: true,
     protractor: true
   },
-  extends: 'sparkpost/index'
+  extends: "sparkpost/index"
 };
