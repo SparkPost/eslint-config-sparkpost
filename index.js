@@ -28,6 +28,7 @@ module.exports = {
     eqeqeq: 'error',
     'func-names': ['error', 'as-needed'],
     indent: ['error', 2, { SwitchCase: 1 }],
+    'id-length': ['error', { exceptions: ['_'] }],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'unix'],
