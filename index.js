@@ -56,6 +56,7 @@ module.exports = {
         const: 'never' // Exactly one declarator per const declaration per block
       }
     ],
+    'object-shorthand': ['error', 'always'],
     'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
     'prefer-const': 'error',
@@ -79,6 +80,7 @@ module.exports = {
     {
       files: ['*.spec.js'],
       rules: {
+        'max-params': 'off',
         'func-names': 'off',
         'prefer-arrow-callback': 'off'
       }
