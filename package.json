@@ -11,7 +11,7 @@
     "eslintconfig"
   ],
   "scripts": {
-    "precommit": "prettier-eslint --write *.js",
+    "precommit": "prettier-eslint --eslint-config-path ./index.js --write *.js",
     "test": "eslint ."
   },
   "devDependencies": {
