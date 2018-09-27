@@ -1,11 +1,11 @@
 module.exports = {
   parserOptions: {
-    sourceType: "module"
+    sourceType: 'module'
   },
-  extends: "sparkpost/api",
+  extends: 'sparkpost/api',
   rules: {
-    "require-jsdoc": [
-      "error",
+    'require-jsdoc': [
+      'error',
       {
         require: {
           FunctionDeclaration: true,
@@ -15,23 +15,23 @@ module.exports = {
         }
       }
     ],
-    "valid-jsdoc": [
-      "error",
+    'valid-jsdoc': [
+      'error',
       {
         prefer: {
-          return: "returns",
-          arg: "param",
-          argument: "param"
+          return: 'returns',
+          arg: 'param',
+          argument: 'param'
         },
         preferType: {
-          Boolean: "boolean",
-          Number: "number",
-          object: "Object",
-          String: "string"
+          Boolean: 'boolean',
+          Number: 'number',
+          object: 'Object',
+          String: 'string'
         },
         requireReturn: false,
         requireReturnType: true,
-        matchDescription: ".+",
+        matchDescription: '.+',
         requireParamDescription: false,
         requireReturnDescription: false
       }
@@ -39,10 +39,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["*.spec.js"],
+      files: ['*.spec.js'],
       rules: {
-        "require-jsdoc": "off",
-        "valid-jsdoc": "off"
+        'require-jsdoc': 'off',
+        'valid-jsdoc': 'off'
       }
     }
   ]
