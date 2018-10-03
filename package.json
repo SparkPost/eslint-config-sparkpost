@@ -14,9 +14,11 @@
     "precommit": "prettier-eslint --eslint-config-path ./index.js --write *.js",
     "test": "eslint ."
   },
+  "dependencies": {
+    "eslint-plugin-mocha": "^5.2.0"
+  },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-plugin-mocha": "^5.2.0",
     "husky": "^0.14.3",
     "prettier-eslint-cli": "^4.7.1"
   },
