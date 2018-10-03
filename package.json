@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sparkpost",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "ESLint configuration for SparkPost",
   "repository": "SparkPost/eslint-config-sparkpost",
   "author": "SparkPost",
