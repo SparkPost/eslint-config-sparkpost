@@ -7,9 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018
   },
-  plugins: [
-    'mocha'
-  ],
+  plugins: ['mocha'],
   extends: 'eslint:recommended',
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
