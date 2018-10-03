@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018
   },
+  plugins: ['mocha'],
   extends: 'eslint:recommended',
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
@@ -33,6 +34,10 @@ module.exports = {
     'keyword-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'unix'],
     'max-params': ['error', 3],
+    'mocha/no-exclusive-tests': 'error',
+    'mocha/no-mocha-arrows': 'error',
+    'mocha/no-identical-title': 'error',
+    'mocha/no-sibling-hooks': 'error',
     'new-cap': 'error',
     'no-caller': 'error',
     quotes: ['error', 'single'],

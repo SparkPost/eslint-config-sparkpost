@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sparkpost",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "ESLint configuration for SparkPost",
   "repository": "SparkPost/eslint-config-sparkpost",
   "author": "SparkPost",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "eslint": "^4.19.1",
+    "eslint-plugin-mocha": "^5.2.0",
     "husky": "^0.14.3",
     "prettier-eslint-cli": "^4.7.1"
   },
