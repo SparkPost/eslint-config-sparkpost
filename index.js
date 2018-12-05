@@ -41,7 +41,7 @@ module.exports = {
     'new-cap': 'error',
     'no-caller': 'error',
     quotes: ['error', 'single'],
-    'no-cond-assign': 'off',
+    'no-cond-assign': ['error', 'always'],
     'no-debugger': 'off',
     'no-dupe-class-members': 'error',
     'no-empty': 'error',
