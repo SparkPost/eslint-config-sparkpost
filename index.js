@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
+  plugins: ['mocha'],
   extends: 'eslint:recommended',
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
@@ -23,15 +24,20 @@ module.exports = {
     'eol-last': 'error',
     eqeqeq: 'error',
     'func-names': ['error', 'as-needed'],
-    indent: ['error', 2, { SwitchCase: 1, VariableDeclarator: 2 }],
+    indent: ['error', 2, { SwitchCase: 1 }],
+    'id-length': ['error', { exceptions: ['_'] }],
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'keyword-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'unix'],
     'max-params': ['error', 3],
+    'mocha/no-exclusive-tests': 'error',
+    'mocha/no-mocha-arrows': 'error',
+    'mocha/no-identical-title': 'error',
+    'mocha/no-sibling-hooks': 'error',
     'new-cap': 'error',
     'no-caller': 'error',
     quotes: ['error', 'single'],
-    'no-cond-assign': 'off',
+    'no-cond-assign': ['error', 'always'],
     'no-debugger': 'off',
     'no-dupe-class-members': 'error',
     'no-empty': 'error',
@@ -51,6 +57,7 @@ module.exports = {
         const: 'never', // Exactly one declarator per const declaration per block
       },
     ],
+    'object-shorthand': ['error', 'always'],
     'operator-linebreak': ['error', 'before', { overrides: { '=': 'none' } }],
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
     'prefer-const': 'error',
@@ -74,6 +81,7 @@ module.exports = {
     {
       files: ['*.spec.js'],
       rules: {
+        'max-params': 'off',
         'func-names': 'off',
         'prefer-arrow-callback': 'off',
       },

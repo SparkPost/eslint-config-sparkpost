@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sparkpost",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "ESLint configuration for SparkPost",
   "repository": "SparkPost/eslint-config-sparkpost",
   "author": "SparkPost",
@@ -11,15 +11,23 @@
     "eslintconfig"
   ],
   "scripts": {
-    "precommit": "prettier-eslint --write *.js",
-    "test": "eslint ."
+    "prettify": "prettier-eslint --eslint-config-path ./index.js --write *.js",
+    "test": "eslint -c index.js --env node ."
+  },
+  "dependencies": {
+    "eslint-plugin-mocha": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "husky": "^0.14.3",
+    "eslint": "^5.13.0",
+    "husky": "^1.3.1",
     "prettier-eslint-cli": "^4.7.1"
   },
   "peerDependencies": {
-    "eslint": "^4.13.0"
+    "eslint": "^5.13.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run prettify"
+    }
   }
 }
