@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   env: {
     es6: true
@@ -8,7 +6,12 @@ module.exports = {
     ecmaVersion: 2018
   },
   plugins: ['mocha'],
-  extends: 'eslint:recommended',
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
+  ],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
@@ -16,11 +19,7 @@ module.exports = {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     camelcase: 'off',
     'comma-dangle': ['error', 'never'],
-    'comma-style': [
-      'error',
-      'first',
-      { exceptions: { ArrayExpression: true, ObjectExpression: true } }
-    ],
+    'comma-style': ['error', 'first', { exceptions: { ArrayExpression: true, ObjectExpression: true } }],
     complexity: ['error', 5],
     'consistent-this': ['error', 'self'],
     curly: ['error', 'all'],
@@ -88,6 +87,28 @@ module.exports = {
         'max-params': 'off',
         'func-names': 'off',
         'prefer-arrow-callback': 'off'
+      }
+    },
+    {
+      files: ['*.ts'],
+      env: {
+        es6: true,
+        node: true,
+        mocha: true
+      },
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint', 'mocha'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/camelcase': 'off',
+        '@typescript-eslint/no-use-before-define': [
+          'error',
+          {
+            functions: false,
+            classes: false,
+            variables: true
+          }
+        ]
       }
     }
   ]
