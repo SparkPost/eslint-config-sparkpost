@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   env: {
     es6: true
@@ -6,12 +8,7 @@ module.exports = {
     ecmaVersion: 2018
   },
   plugins: ['mocha'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
@@ -74,7 +71,7 @@ module.exports = {
     'space-infix-ops': 'error',
     'space-return-throw-case': 'off',
     'space-unary-ops': 'off',
-    strict: 'error',
+    strict: ['error', 'global'],
     'template-curly-spacing': ['error', 'never'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
@@ -91,6 +88,7 @@ module.exports = {
     },
     {
       files: ['*.ts'],
+      extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
       env: {
         es6: true
       },
