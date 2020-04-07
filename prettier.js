@@ -1,1 +1,3 @@
-require('./.prettierrc.js')
+module.exports = {
+  ...require('./.prettierrc.js')
+};
