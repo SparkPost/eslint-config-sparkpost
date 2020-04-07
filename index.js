@@ -5,7 +5,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018
   },
-  plugins: ['mocha', '@typescript-eslint'],
+  plugins: ['mocha'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -95,6 +95,7 @@ module.exports = {
         es6: true
       },
       parser: '@typescript-eslint/parser',
+      plugins: ['mocha', '@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/camelcase': 'off',
