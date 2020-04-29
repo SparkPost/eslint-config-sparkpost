@@ -1,7 +1,13 @@
 # eslint-config-sparkpost
 ESLint configuration for Javascript based SparkPost projects 
 
+## Peer dependencies
 
+### JS:
+```npm i --save-dev eslint-plugin-mocha```
+
+### Typescript:
+```npm i --save-dev eslint-plugin-mocha @typescript-eslint/eslint-plugin @typescript-eslint/parser typescript-eslint```
 
 ## Notes for Docs in Libraries
 
@@ -15,6 +21,13 @@ To use, add the following to your `.eslintrc.json`:
 }
 ```
 
+for Typescript, add:
+
+```json
+{
+  "extends": "sparkpost/tsc"
+}
+```
 
 The scripts below in this README are purely for reference and can make managing documentation in your shared lib much easier. 
 

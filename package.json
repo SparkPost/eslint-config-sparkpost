@@ -15,7 +15,10 @@
     "test": "eslint -c index.js --env node ."
   },
   "dependencies": {
-    "eslint-plugin-mocha": "^5.2.1"
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint-plugin-mocha": "^5.2.1",
+    "typescript-eslint": "0.0.1-alpha.0"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
@@ -23,7 +26,11 @@
     "prettier-eslint-cli": "^4.7.1"
   },
   "peerDependencies": {
-    "eslint": "^5.13.0"
+    "eslint": "^5.13.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "eslint-plugin-mocha": "^5.2.1",
+    "typescript-eslint": "0.0.1-alpha.0"
   },
   "husky": {
     "hooks": {
