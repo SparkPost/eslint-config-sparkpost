@@ -8,7 +8,7 @@ module.exports = {
     ecmaVersion: 2018
   },
   plugins: ['mocha'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
