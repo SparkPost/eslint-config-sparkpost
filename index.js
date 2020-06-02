@@ -88,12 +88,12 @@ module.exports = {
     },
     {
       files: ['*.ts'],
-      extends: ['plugin:prettier/recommended', 'plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
+      extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
       env: {
         es6: true
       },
       parser: '@typescript-eslint/parser',
-      plugins: ['mocha', '@typescript-eslint'],
+      plugins: ['prettier', 'mocha', '@typescript-eslint'],
       rules: {
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/camelcase': 'off',
@@ -104,8 +104,17 @@ module.exports = {
             classes: false,
             variables: true
           }
-        ]
-      }
+        ],
+        "prettier/prettier": [
+          "error",
+          {
+            semi: true,
+            singleQuote: true,
+            tabWidth: 2,
+            trailingComma: "none"
+          }
+        ],
+      },
     }
   ]
 };
