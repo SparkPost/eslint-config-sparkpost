@@ -105,16 +105,16 @@ module.exports = {
             variables: true
           }
         ],
-        "prettier/prettier": [
-          "error",
+        'prettier/prettier': [
+          'error',
           {
             semi: true,
             singleQuote: true,
             tabWidth: 2,
-            trailingComma: "none"
+            trailingComma: 'none'
           }
-        ],
-      },
+        ]
+      }
     }
   ]
 };
