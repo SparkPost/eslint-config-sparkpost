@@ -88,7 +88,13 @@ module.exports = {
     },
     {
       files: ['*.ts'],
-      extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
+      extends:
+      [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
+        'plugin:prettier/recommended'
+      ],
       env: {
         es6: true
       },
