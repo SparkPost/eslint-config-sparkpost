@@ -1,7 +1,7 @@
 # eslint-config-sparkpost
 ESLint configuration for Javascript and TypeScript based SparkPost projects 
 
-## Updating from 2.x to 3.x
+## Upgrading from 2.x to 3.x
 There were several breaking changes including moving from ESLint 5.x to ESLint 8.x.  This change alone caused some minimal breaking changes.  Since 
 we ultimately extend `eslint:recommended` in our base configuration, the upgrade from eslint 5.x to 8.x changed that 'recommended' config and the 
 rules between versions have definitely changed.  We compensated to match our existing config as best we could, but you may find other changes when 
