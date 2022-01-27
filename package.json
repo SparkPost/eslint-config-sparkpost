@@ -18,12 +18,18 @@
     "husky": "^7.0.4"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^8.7.0",
-    "eslint-plugin-mocha": "^10.0.3"
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-prettier": "^4.0.0"
   },
   "peerDependenciesMeta": {
-    "eslint-plugin-mocha": {
-      "optional": true
-    }
+    "eslint-plugin-mocha": {"optional": true},
+    "@typescript-eslint/eslint-plugin": {"optional": true},
+    "@typescript-eslint/parser": {"optional": true},
+    "eslint-config-prettier": {"optional": true},
+    "eslint-plugin-prettier": {"optional": true}
   }
 }
