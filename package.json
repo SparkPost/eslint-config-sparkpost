@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sparkpost",
-  "version": "2.1.2-0",
+  "version": "3.0.0",
   "description": "ESLint configuration for SparkPost",
   "repository": "SparkPost/eslint-config-sparkpost",
   "author": "SparkPost",
@@ -26,10 +26,20 @@
     "eslint-plugin-prettier": "^4.0.0"
   },
   "peerDependenciesMeta": {
-    "eslint-plugin-mocha": {"optional": true},
-    "@typescript-eslint/eslint-plugin": {"optional": true},
-    "@typescript-eslint/parser": {"optional": true},
-    "eslint-config-prettier": {"optional": true},
-    "eslint-plugin-prettier": {"optional": true}
+    "eslint-plugin-mocha": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-config-prettier": {
+      "optional": true
+    },
+    "eslint-plugin-prettier": {
+      "optional": true
+    }
   }
 }
