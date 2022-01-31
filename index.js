@@ -5,9 +5,8 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2021
   },
-  plugins: ['mocha'],
   extends: ['eslint:recommended'],
   rules: {
     'arrow-body-style': ['error', 'as-needed'],
@@ -30,10 +29,6 @@ module.exports = {
     'keyword-spacing': ['error', { before: true, after: true }],
     'linebreak-style': ['error', 'unix'],
     'max-params': ['error', 3],
-    'mocha/no-exclusive-tests': 'error',
-    'mocha/no-mocha-arrows': 'error',
-    'mocha/no-identical-title': 'error',
-    'mocha/no-sibling-hooks': 'error',
     'new-cap': 'error',
     'no-caller': 'error',
     quotes: ['error', 'single'],
@@ -76,51 +71,5 @@ module.exports = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
     yoda: ['error', 'never']
-  },
-  overrides: [
-    {
-      files: ['*.spec.js'],
-      rules: {
-        'max-params': 'off',
-        'func-names': 'off',
-        'prefer-arrow-callback': 'off'
-      }
-    },
-    {
-      files: ['*.ts'],
-      extends:
-      [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
-        'plugin:prettier/recommended'
-      ],
-      env: {
-        es6: true
-      },
-      parser: '@typescript-eslint/parser',
-      plugins: ['prettier', 'mocha', '@typescript-eslint'],
-      rules: {
-        '@typescript-eslint/no-explicit-any': 'error',
-        '@typescript-eslint/camelcase': 'off',
-        '@typescript-eslint/no-use-before-define': [
-          'error',
-          {
-            functions: false,
-            classes: false,
-            variables: true
-          }
-        ],
-        'prettier/prettier': [
-          'error',
-          {
-            semi: true,
-            singleQuote: true,
-            tabWidth: 2,
-            trailingComma: 'none'
-          }
-        ]
-      }
-    }
-  ]
+  }
 };
